@@ -1,0 +1,30 @@
+= SubGrabber
+
+Get a subtitle for a video by searching on OpenSubtitles.org.
+
+This program started as a toy project to learn https://www.rust-lang.org[Rust]
+so the code might not be idiomatic and can be improved.
+However if the OpenSubtitles API is up then it should work as expected.
+
+You are welcome to submit pull requests for any suggestion or improvement.
+
+== Getting started
+
+=== Installation
+
+Make sure you have https://github.com/rust-lang/cargo/[cargo] installed.
+
+. Download a copy of this repo.
+. Run `cargo install`, subgrabber should now be installed in `~/.cargo/bin/`.
+
+=== Usage
+
+Given a video `downloads/my_movie.mp4`:
+ subgrabber downloads/my_movie.mp4
+
+The subtitle will be downloaded to `downloads/my_movie.srt`.
+
+== Notes
+
+* Currently SubGrabber uses a generic user agent for the API calls.
+* Only tested on linux, should work on macOS, might not work on Windows.
